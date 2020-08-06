@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Twitcasting-Shortcut",
+    "version": "1.0",
+   
+    "description": "Add shortcut to send comment by Ctrl + Enter",
+    
+    "icons": {
+      "48": "icons/icon.png"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["https://twitcasting.tv/*"],
+          "js": ["sendComment.js"]
+        }
+    ]
+}
